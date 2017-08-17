@@ -24,6 +24,8 @@ GameObject:
   - component: {fileID: 23328842644450382}
   - component: {fileID: 54528782502770884}
   - component: {fileID: 114116666032543544}
+  - component: {fileID: 136862692308651818}
+  - component: {fileID: 114775473669985366}
   m_Layer: 0
   m_Name: Guide
   m_TagString: Untagged
@@ -38,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1950421264072996}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -110,6 +112,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move_force: 6000
+--- !u!114 &114775473669985366
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1950421264072996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 805b4667bce8943d3baf40eebb54474d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  persuasion: 0.686
+  direction: {x: 0, y: 0, z: 0}
+  on_enter: 1
+  on_stay: 1
+  on_exit: 1
 --- !u!136 &136346230695515130
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -123,3 +142,16 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!136 &136862692308651818
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1950421264072996}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 5.35
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
