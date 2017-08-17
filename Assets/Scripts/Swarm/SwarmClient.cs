@@ -12,14 +12,14 @@ public class SwarmClient : MonoBehaviour {
 
     [Header("Effect decay")]
     public Vector3 effect_direction;
-    public float effect_weight;
+    public AnimationCurve curve;
 
-    public AnimationCurve effect_decay;
-    private float last_effect_time;
+    private Dictionary<int, EffectInfo> effects;
 
     [Header("Surroundings")]
     public float range;
     public float forward_range;
+    public float surrounding_effect;
 
 
 
@@ -28,18 +28,36 @@ public class SwarmClient : MonoBehaviour {
 
     void Start(){
         body = GetComponent<Rigidbody>();
+        effects = new Dictionary<int, EffectInfo>();
     }
 
     void Update(){
 
-        float decay = effect_decay.Evaluate(Time.time - last_effect_time);
-        if(debug)print("Decay " + decay);
-
         Vector3 surroundings = CalcSurroundEffect();
 
+        //calculate effects;
+
+        effect_direction = Vector3.zero;
+        foreach (KeyValuePair<int, EffectInfo> pair in effects){
+            EffectInfo info = pair.Value;
+
+            if(info.timestamp_end < Time.time){
+                continue;
+            }
+
+            float t = Time.time - info.timestamp;
+            float c = 0;
+
+            c = curve.Evaluate(1 - (t / info.fade_out_length));
 
 
-        direction = (surroundings/effect_weight) * (1-decay) + effect_direction * decay;
+            Vector3 v = info.direction * c;
+
+            effect_direction += v * info.persuasion;
+        }
+
+
+        direction = (surroundings * surrounding_effect) + effect_direction;
         body.AddForce(direction * Time.deltaTime * move_force);
 
         Debug.DrawRay(transform.position, direction.normalized, Color.green);
@@ -47,12 +65,12 @@ public class SwarmClient : MonoBehaviour {
         Debug.DrawRay(transform.position, surroundings, Color.red);
     }
 
-    public void Effect(Vector3 direction){
-        last_effect_time = Time.time;
-
-        effect_direction = direction;
-        Debug.DrawRay(transform.position, direction, Color.red);
-
+    public void Effect(EffectInfo effectInfo){
+        if(!effects.ContainsKey(effectInfo.id)){
+            effects.Add(effectInfo.id, effectInfo);
+        }else{
+            effects[effectInfo.id] = effectInfo;
+        }
     }
 
     public Vector3 CalcSurroundEffect(){
@@ -74,11 +92,4 @@ public class SwarmClient : MonoBehaviour {
 
     }
 
-    public struct EffectInfo{
-        int id;
-        float timestamp;
-        AnimationCurve decay;
-        float force;
-        Vector3 direction;
-    }
 }

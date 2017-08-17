@@ -113,33 +113,27 @@ MonoBehaviour:
   move_force: 1000
   direction: {x: 0, y: 0, z: 0}
   effect_direction: {x: 0, y: 0, z: 0}
-  effect_weight: 1
-  effect_decay:
+  curve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 2
-      time: -0.00064849854
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
       value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-    - serializedVersion: 2
-      time: 2.0334864
-      value: 0.6382182
-      inSlope: -0.28908253
-      outSlope: -0.28908253
-      tangentMode: 0
-    - serializedVersion: 2
-      time: 5
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 136
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
   range: 10
   forward_range: 1
+  surrounding_effect: 0.25
 --- !u!136 &136759362919242612
 CapsuleCollider:
   m_ObjectHideFlags: 1

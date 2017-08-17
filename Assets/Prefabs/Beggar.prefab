@@ -111,7 +111,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  persuasion: 0.306
+  persuasion: 0.19
+  force: 0
+  fade_in_length: 0.1
+  fade_out_length: 0.1
   direction: {x: 0, y: 0, z: 0}
   on_enter: 1
   on_stay: 1

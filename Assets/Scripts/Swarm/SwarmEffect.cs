@@ -17,6 +17,10 @@ public class SwarmEffect : MonoBehaviour {
 
     [Range(0,1)]public float persuasion;
 
+    public float force;
+    public float fade_in_length;
+    public float fade_out_length;
+
     public Vector3 direction;
 
     [Header("Trigger Type")]
@@ -57,7 +61,7 @@ public class SwarmEffect : MonoBehaviour {
 
     }
 
-    public Vector3 CalcEffect(SwarmClient client){
+    public EffectInfo CalcEffect(SwarmClient client){
 
         Vector3 v = Vector3.zero;
 
@@ -75,7 +79,16 @@ public class SwarmEffect : MonoBehaviour {
         }
 
 
-        v = Vector3.Lerp(client.effect_direction, v, persuasion);
-        return v;
+        EffectInfo info = new EffectInfo();
+        info.id = id;
+        info.timestamp = Time.time;
+        info.timestamp_end = Time.time + fade_in_length + fade_out_length;
+        info.fade_in_length = fade_in_length;
+        info.fade_out_length = fade_out_length;
+        info.force = force;
+        info.persuasion = persuasion;
+        info.direction = v;
+
+        return info;
     }
 }
