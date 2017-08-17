@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 136759362919242612}
   - component: {fileID: 23752902067777988}
   - component: {fileID: 54676200959970050}
+  - component: {fileID: 114830836758441998}
   m_Layer: 0
   m_Name: Tourist
   m_TagString: Untagged
@@ -91,12 +92,28 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 10
-  m_AngularDrag: 1
+  m_AngularDrag: 10
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
+--- !u!114 &114830836758441998
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1058587921993050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 713b9270d37b74e629cf7f9ba2c11517, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 3
+  forward_range: 1
+  move_force: 5000
+  swarm_force: 2500
+  swarm_force_minimum: 500
 --- !u!136 &136759362919242612
 CapsuleCollider:
   m_ObjectHideFlags: 1
