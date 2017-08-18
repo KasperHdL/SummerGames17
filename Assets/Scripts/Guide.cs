@@ -20,12 +20,22 @@ public class Guide : MonoBehaviour {
 	void Update () {
 
         //movement
-        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        Vector2 input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+
+        Vector3 camera_delta = transform.position - Camera.main.transform.position;
+        camera_delta.y = 0;
+        camera_delta = camera_delta.normalized;
+
+        Vector3 perp = Vector3.Cross(camera_delta, -Vector3.up);
+
+        Vector3 move = perp * input.x + camera_delta * input.y;
+        move = move.normalized;
+
         body.AddForce(move * move_force * Time.deltaTime);
 
         //rotate
 
-        Vector2 input = Input.mousePosition;
+        input = Input.mousePosition;
         Vector3 delta = Vector3.zero;
 
         Ray ray = Camera.main.ScreenPointToRay(input);

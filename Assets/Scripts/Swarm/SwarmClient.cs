@@ -57,6 +57,7 @@ public class SwarmClient : MonoBehaviour {
             Vector3 delta = transform.position - effector.transform.position;
             float effect_distance = delta.magnitude;
             float effect_mult = effector.range_effect.Evaluate(effect_distance) * effector.multiplier;
+
             if(effect_mult == 0) continue;
 
             Vector3 v = Vector3.zero;
