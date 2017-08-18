@@ -14,8 +14,10 @@ public class CameraFollow : MonoBehaviour {
 
 
     private Rigidbody body;
+    private Rigidbody target_body;
 	void Start () {
         body = GetComponent<Rigidbody>();
+        target_body = target.GetComponent<Rigidbody>();
 
 		
 	}
