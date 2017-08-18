@@ -7,6 +7,7 @@ public class SwarmEffect : MonoBehaviour {
     static int id_counter = 0;
     int id;
 
+    public bool allow_triggers = true;
 
     public EffectType type;
 
@@ -14,6 +15,7 @@ public class SwarmEffect : MonoBehaviour {
     public float duration;
 
     public AnimationCurve range_effect;
+    public float multiplier = 1;
 
     [Header("Trigger Type")]
     public bool on_enter;
@@ -31,7 +33,7 @@ public class SwarmEffect : MonoBehaviour {
         if(!on_enter)return;
 
         SwarmClient client = coll.GetComponent<SwarmClient>();
-        if(client == null) return;
+        if(client == null || !allow_triggers) return;
         client.Effect(CalcEffect(client));
 
     }
@@ -40,7 +42,7 @@ public class SwarmEffect : MonoBehaviour {
         if(!on_stay)return;
 
         SwarmClient client = coll.GetComponent<SwarmClient>();
-        if(client == null) return;
+        if(client == null || !allow_triggers) return;
         client.Effect(CalcEffect(client));
 
     }
@@ -50,15 +52,13 @@ public class SwarmEffect : MonoBehaviour {
 
         SwarmClient client = coll.GetComponent<SwarmClient>();
 
-        if(client == null) return;
+        if(client == null || !allow_triggers) return;
 
         client.Effect(CalcEffect(client));
 
     }
 
     public EffectInfo CalcEffect(SwarmClient client){
-
-
 
         EffectInfo info = new EffectInfo();
         info.id = id;

@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1775114512525824}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.16}
+  m_LocalPosition: {x: -11.39, y: 1, z: 1.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -58,7 +58,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f2876adaa561a4b0c9354222fc00cd3d, type: 2}
+  - {fileID: 2100000, guid: fe3e41dd588e44642a1647ae372668a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -95,7 +95,7 @@ Rigidbody:
   m_Drag: 10
   m_AngularDrag: 10
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
@@ -110,21 +110,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 805b4667bce8943d3baf40eebb54474d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allow_triggers: 1
   type: 2
-  persuasion: 0.24
+  persuasion: 0.322
   duration: 1
   range_effect:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 2
-      time: 0
-      value: 0
+      time: 0.0014974326
+      value: -2.0194602
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     - serializedVersion: 2
-      time: 1.4958165
-      value: 0.89032793
+      time: 1.9870884
+      value: 0.9664655
       inSlope: 0.40687156
       outSlope: 0.40687156
       tangentMode: 0
@@ -143,10 +144,11 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
-  direction: {x: 0, y: 0, z: 0}
+  multiplier: 5
   on_enter: 1
   on_stay: 1
   on_exit: 1
+  direction: {x: 0, y: 0, z: 0}
 --- !u!136 &136325508781679398
 CapsuleCollider:
   m_ObjectHideFlags: 1
