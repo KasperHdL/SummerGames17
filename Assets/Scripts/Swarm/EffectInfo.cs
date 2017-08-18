@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class EffectInfo{
     public int id;
-    public float timestamp;
     public float timestamp_end;
-    public bool faded_in;
-    public float fade_out_length;
-    public float fade_in_length;
-    public float force;
-    public float persuasion;
-    public Vector3 direction;
+    public SwarmEffect effector;
 
     public EffectInfo(){}
 }
+
+public enum EffectType{
+    Direction,
+    Push,
+    Pull,
+    Stop
+};

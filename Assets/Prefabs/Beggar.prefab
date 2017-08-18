@@ -112,9 +112,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   persuasion: 0.19
-  force: 0
-  fade_in_length: 0.1
-  fade_out_length: 0.1
+  duration: 0.5
+  range_effect:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+    - serializedVersion: 2
+      time: 2
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
   direction: {x: 0, y: 0, z: 0}
   on_enter: 1
   on_stay: 1

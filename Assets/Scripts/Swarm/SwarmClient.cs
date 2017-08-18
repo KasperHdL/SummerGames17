@@ -51,18 +51,37 @@ public class SwarmClient : MonoBehaviour {
                 continue;
             }
 
-            float t = Time.time - info.timestamp;
-            float c = 0;
+            //calculate effect
+            SwarmEffect effector = info.effector;
 
-            c = curve.Evaluate(1 - (t / info.fade_out_length));
+            Vector3 delta = transform.position - effector.transform.position;
+            float effect_distance = delta.magnitude;
+            float effect_mult = effector.range_effect.Evaluate(effect_distance);
+            if(effect_mult == 0) continue;
+
+            Vector3 v = Vector3.zero;
+
+            switch(effector.type){
+                case EffectType.Direction:{
+                    v = effector.direction;
+                }break;
+                case EffectType.Push:{
+                    v = delta;
+                }break;
+                case EffectType.Pull:{
+                    v = -delta;
+                }break;
+                case EffectType.Stop:{
+                    v = Vector3.zero;
+                }break;
+            }
 
 
-            Vector3 v = info.direction * c;
-
-            effect_direction += v * info.persuasion;
+            //effect_direction += v * info.persuasion;
+            effect_direction = Vector3.Lerp(effect_direction, v * effect_mult, effector.persuasion);
 
             if(debug){
-                Debug.DrawRay(transform.position + v.normalized, v * info.persuasion, Color.yellow);
+                Debug.DrawRay(transform.position + v.normalized, v * effector.persuasion * effect_mult, Color.yellow);
             }
         }
 
