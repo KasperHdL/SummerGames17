@@ -109,10 +109,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 713b9270d37b74e629cf7f9ba2c11517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 0
   debug: 0
   move_force: 1000
   direction: {x: 0, y: 0, z: 0}
-  effect_direction: {x: 0, y: 0, z: 0}
   curve:
     serializedVersion: 2
     m_Curve:
@@ -131,9 +131,52 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+  effect_direction: {x: 0, y: 0, z: 0}
   range: 10
+  range_effect:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0.0018426348
+      value: -0.9981464
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+    - serializedVersion: 2
+      time: 0.99785304
+      value: -0.50029385
+      inSlope: 0.094969146
+      outSlope: 0.094969146
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 3.1178868
+      value: 0.31342298
+      inSlope: 0.8570263
+      outSlope: 0.8570263
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 4.9135294
+      value: 0.75158215
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 8
+      value: 1.001709
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 9.97409
+      value: 0.0017089844
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
   forward_range: 1
-  surrounding_effect: 0.25
+  surrounding_effect: 0.99
 --- !u!136 &136759362919242612
 CapsuleCollider:
   m_ObjectHideFlags: 1

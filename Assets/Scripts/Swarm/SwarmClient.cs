@@ -11,21 +11,17 @@ public class SwarmClient : MonoBehaviour {
 
     public float move_force;
 
-    public Vector3 direction;
-
-    public float min_change;
-    public float direction_change_force;
+    [HideInInspector]public Vector3 direction;
 
     [Header("Effect decay")]
-    public Vector3 effect_direction;
     public AnimationCurve curve;
 
+    [HideInInspector]public Vector3 effect_direction;
     private Dictionary<int, EffectInfo> effects;
-
-    private Dictionary<int, Vector3> last_surrounders;
 
     [Header("Surroundings")]
     public float range;
+    public AnimationCurve range_effect;
     public float forward_range;
     public float surrounding_effect;
 
@@ -39,7 +35,6 @@ public class SwarmClient : MonoBehaviour {
         body = GetComponent<Rigidbody>();
 
         effects = new Dictionary<int, EffectInfo>();
-        last_surrounders = new Dictionary<int, Vector3>();
     }
 
     void Update(){
@@ -96,54 +91,19 @@ public class SwarmClient : MonoBehaviour {
 
         RaycastHit[] hits = Physics.CapsuleCastAll(transform.position, transform.position + Vector3.up, range, body.velocity.normalized, forward_range); 
 
-        float force_mult = 1;
         for(int i = 0; i < hits.Length; i++){ 
             if(hits[i].transform == transform) continue; 
 
             SwarmClient client = hits[i].collider.GetComponent<SwarmClient>(); 
             if(client == null) continue;
 
-            //get last velo for client
-            Vector3 last_velo = Vector3.zero;
-            bool is_new = true;
-            if(last_surrounders.ContainsKey(client.id)){
-                last_velo = last_surrounders[client.id];
-                is_new = false;
-            }
+            Vector3 delta = client.transform.position - transform.position;
+            
+            dir += delta.normalized * range_effect.Evaluate(delta.magnitude);
 
-            Vector3 velo = hits[i].rigidbody.velocity;;
+        }
 
-            if(!is_new){
-                Vector3 delta = velo - last_velo;
-
-
-                if(delta.magnitude > min_change){
-                    dir = Vector3.Lerp(dir, velo, .5f);
-                    force_mult = direction_change_force;
-                }else{
-                    dir += velo;
-                }
-
-
-            }else{
-                dir += velo;
-            }
-
-
-            if(debug){
-                Debug.DrawRay(hits[i].transform.position, velo, Color.red);
-            }
-
-            //upsert entry
-            if(!last_surrounders.ContainsKey(client.id)){
-                last_surrounders.Add(client.id, velo);
-            }else{
-                last_surrounders[client.id] = velo;
-            }
-        } 
-
-
-        return dir.normalized * force_mult;
+        return dir.normalized;
     }
 
 }
