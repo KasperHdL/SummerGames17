@@ -20,6 +20,12 @@ public class Car : MonoBehaviour {
         t += (1 / distance) * speed * Time.deltaTime;
         transform.position = Vector3.Lerp(currentPoint.transform.position, nextPoint.transform.position, t);
 
+
+        float step = 4f * Time.deltaTime;
+        Vector3 target = nextPoint.transform.position - transform.position;
+        Vector3 newDir = Vector3.RotateTowards(transform.forward, target, step, 0.0F);
+        transform.rotation = Quaternion.LookRotation(newDir);
+
         if (t >= 1) NextPoint();
 	}
 
