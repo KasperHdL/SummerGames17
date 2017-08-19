@@ -1,4 +1,3 @@
-- Camera(Kasper)
 - Scene Setup
 	- Bus
     - Beggars, Musicians and so on
