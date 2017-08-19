@@ -19,9 +19,10 @@ public class WorldBuild : MonoBehaviour {
 
     [ContextMenu("DELETE")]
     void Delete() {
-        foreach(GameObject obj in objs) {
-            DestroyImmediate(obj);
-        }
+        if(objs.Length > 0)
+            foreach(GameObject obj in objs) {
+                DestroyImmediate(obj);
+            }
     }
 
     [ContextMenu("Do Something")]
@@ -40,6 +41,7 @@ public class WorldBuild : MonoBehaviour {
             for(int y = 0; y < 25;y++)
             {
                 objs[x + y * 25] = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                objs[x + y * 25].name = "Building" + (x + y * 25);
                 objs[x + y * 25].transform.parent = transform;
                 float height = 10 + (Mathf.PerlinNoise((float)x * 0.1f, (float)y * 0.3f) * 35f) + Random.Range(2,13);
                 objs[x + y * 25].transform.localScale = new Vector3(18,height,18);
