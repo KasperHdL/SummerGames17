@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 114346166938329774}
   - component: {fileID: 114815457537771588}
   - component: {fileID: 82309439122010148}
+  - component: {fileID: 114969772667049762}
   m_Layer: 0
   m_Name: Beggar
   m_TagString: Untagged
@@ -120,10 +121,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 4
-  MaxDistance: 35
+  MinDistance: 0
+  MaxDistance: 20
   Pan2D: 0
-  rolloffMode: 2
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -249,6 +250,17 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a114f5a29bee6496fa8d749b8efbbd7d, type: 3}
   - {fileID: 8300000, guid: 2d3ffc445536a4f8997384982c54320c, type: 3}
   delay: 0
+--- !u!114 &114969772667049762
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1335484402641732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bc5d23331a3b4242b106288fe6ad37a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &136046540613517498
 CapsuleCollider:
   m_ObjectHideFlags: 1

@@ -75,6 +75,7 @@ GameObject:
   - component: {fileID: 23328842644450382}
   - component: {fileID: 54528782502770884}
   - component: {fileID: 114116666032543544}
+  - component: {fileID: 81829641317637288}
   m_Layer: 0
   m_Name: Guide
   m_TagString: Untagged
@@ -115,7 +116,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1950421264072996}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 1.16}
+  m_LocalPosition: {x: 7.2, y: 1, z: -57.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4684824720757190}
@@ -219,6 +220,13 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 1.00000005e-20
   m_Mesh: {fileID: 4300002, guid: 0b3e3beb7221e457091b5064f2f3c675, type: 3}
+--- !u!81 &81829641317637288
+AudioListener:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1950421264072996}
+  m_Enabled: 1
 --- !u!114 &114113235249242540
 MonoBehaviour:
   m_ObjectHideFlags: 1
