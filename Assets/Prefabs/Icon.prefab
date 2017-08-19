@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23427506547994730}
   - component: {fileID: 114060704617515468}
   m_Layer: 0
-  m_Name: ExcitementIcon
+  m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92,7 +92,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa387760ce1104eb4a2eab6924a36f5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  good: {fileID: 2100000, guid: de01c8c6521bc4537bb5d5817e10db26, type: 2}
-  bad: {fileID: 2100000, guid: b0ab0fd8c8b16430b9f5205be29490ec, type: 2}
   seconds_alive: 1
-  movement: 10
+  movement: 20
