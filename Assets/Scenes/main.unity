@@ -2304,6 +2304,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114116666032543544, guid: ea5def7ba7d534383b6d05ad4293b27c,
+        type: 2}
+      propertyPath: icon_delay
+      value: 0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ea5def7ba7d534383b6d05ad4293b27c, type: 2}
   m_IsPrefabParent: 0

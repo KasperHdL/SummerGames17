@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1058587921993050}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.4400005, y: 1, z: -46.9}
+  m_LocalPosition: {x: 5.5, y: 1, z: -50.300003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4063910819345824}
@@ -248,6 +248,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8d00e937ab3e847429ce07eff1915f93, type: 3}
   volume: 0.5
   model: {fileID: 23387024347184792}
+  icon_happy: {fileID: 2100000, guid: de01c8c6521bc4537bb5d5817e10db26, type: 2}
+  icon_sad: {fileID: 2100000, guid: b0ab0fd8c8b16430b9f5205be29490ec, type: 2}
 --- !u!136 &136759362919242612
 CapsuleCollider:
   m_ObjectHideFlags: 1

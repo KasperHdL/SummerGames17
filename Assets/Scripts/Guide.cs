@@ -10,6 +10,9 @@ public class Guide : MonoBehaviour {
 
     public GuideAction[] actions;
 
+    public GameObject icon_prefab;
+    public float icon_delay;
+
 	// Use this for initialization
 	void Start () {
         body = GetComponent<Rigidbody>();
@@ -35,6 +38,7 @@ public class Guide : MonoBehaviour {
 
         //rotate
 
+        /*
         input = Input.mousePosition;
         Vector3 delta = Vector3.zero;
 
@@ -53,6 +57,7 @@ public class Guide : MonoBehaviour {
             transform.rotation = Quaternion.Euler(0, rot * Mathf.Rad2Deg + 90, 0);
 
         }
+        */
 
         for(int i = 0; i < actions.Length; i++){
             GuideAction a = actions[i];
@@ -60,8 +65,20 @@ public class Guide : MonoBehaviour {
             //activate
             if(Input.GetKey(a.key)){
                 a.effect.allow_triggers = true;
+
+
+                if(a.next < Time.time){
+                    //instantiate icon
+
+
+                    GameObject g = Instantiate(icon_prefab, transform.position, Quaternion.identity) as GameObject;
+                    g.GetComponent<FlyingIcon>().Init(a.icon);
+
+                    a.next = Time.time + icon_delay;
+                }
             }else{
                 a.effect.allow_triggers = false;
+                a.next = 0;
             }
 
         }
@@ -74,6 +91,7 @@ public class Guide : MonoBehaviour {
 public class GuideAction{
     public KeyCode key;
     public SwarmEffect effect;
+    public Material icon;
     [HideInInspector] public float end = 0;
     [HideInInspector] public float next = 0;
 }

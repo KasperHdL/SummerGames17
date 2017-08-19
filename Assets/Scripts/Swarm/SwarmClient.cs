@@ -40,6 +40,9 @@ public class SwarmClient : MonoBehaviour {
 
     public MeshRenderer model;
 
+    public Material icon_happy;
+    public Material icon_sad;
+
     private Rigidbody body;
 
     void Start(){
@@ -117,12 +120,15 @@ public class SwarmClient : MonoBehaviour {
         }
 
 
+        //Spawn Icon
         if(Mathf.Abs(Mathf.Round(excitement*10) - Mathf.Round(before * 10)) >= amount_change_spawn_icon){
             float change = excitement - before;
 
             GameObject g = Instantiate(excitement_prefab, transform.position, Quaternion.identity) as GameObject;
 
-            g.GetComponent<Excitement>().Init(change);
+            bool isHappy = change > 0;
+
+            g.GetComponent<FlyingIcon>().Init(isHappy ? icon_happy : icon_sad);
 
             //play audio
             int index = Random.Range(0, num_clips_per_type) + type * num_clips_per_type;

@@ -2,10 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Icon : MonoBehaviour {
-
-
-    public Material icon;
+public class FlyingIcon : MonoBehaviour {
 
     public float seconds_alive;
 
