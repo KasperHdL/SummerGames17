@@ -155,7 +155,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
+  excitement: 0
   debug: 0
+  excitement_prefab: {fileID: 1257870066201516, guid: ebc755cc294f34d629dc541bc325c19d,
+    type: 2}
+  amount_change_spawn_icon: 1
   move_force: 1000
   direction: {x: 0, y: 0, z: 0}
   curve:

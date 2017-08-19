@@ -11,6 +11,9 @@ public class SwarmClient : MonoBehaviour {
 
     public bool debug;
 
+    public GameObject excitement_prefab;
+    public int amount_change_spawn_icon;
+
     public float move_force;
 
     [HideInInspector]public Vector3 direction;
@@ -45,6 +48,7 @@ public class SwarmClient : MonoBehaviour {
 
         //calculate effects;
 
+        float before = excitement;
         effect_direction = Vector3.zero;
         foreach (KeyValuePair<int, EffectInfo> pair in effects){
             EffectInfo info = pair.Value;
@@ -62,6 +66,7 @@ public class SwarmClient : MonoBehaviour {
                 float change = effector.excitement_per_second * Time.deltaTime;
                 excitement += change;
                 info.excitement_received += change;
+
 
             }
 
@@ -96,6 +101,18 @@ public class SwarmClient : MonoBehaviour {
                 Debug.DrawRay(transform.position + v.normalized, v * effector.persuasion * effect_mult, Color.yellow);
             }
         }
+
+
+        if(Mathf.Abs(Mathf.Round(excitement*10) - Mathf.Round(before * 10)) >= amount_change_spawn_icon){
+            float change = excitement - before;
+
+            GameObject g = Instantiate(excitement_prefab, transform.position, Quaternion.identity) as GameObject;
+
+            g.GetComponent<Excitement>().Init(change);
+
+        }
+
+
 
 
         direction = (surroundings * surrounding_effect) + effect_direction;
