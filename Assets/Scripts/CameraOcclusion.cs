@@ -26,12 +26,14 @@ public class CameraOcclusion : MonoBehaviour {
     }
 
     public void Update(){
-        Vector3 delta = guide.position - camera.position;
+        Vector3 delta = camera.position - guide.position;
+        delta.y = 0;
         delta = delta.normalized;
 
         for(int i = 0; i < buildings.Length; i++){
 
-            Vector3 b = buildings[i].transform.position - camera.transform.position;
+            Vector3 b = buildings[i].transform.position - guide.position;
+            b.y = 0;
             b = b.normalized;
 
             Debug.DrawRay(buildings[i].transform.position, b, Color.red);
@@ -42,7 +44,7 @@ public class CameraOcclusion : MonoBehaviour {
             
             if(d >= 0){
 
-                buildings[i].material.SetFloat("_Transparency", cutoff.Evaluate(1-d));
+                buildings[i].material.SetFloat("_Transparency", cutoff.Evaluate(d));
 
             }
 
