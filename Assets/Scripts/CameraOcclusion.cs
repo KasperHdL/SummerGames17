@@ -42,11 +42,7 @@ public class CameraOcclusion : MonoBehaviour {
             
             float d = Vector3.Dot(delta, b);
             
-            if(d >= 0){
-
-                buildings[i].material.SetFloat("_Transparency", cutoff.Evaluate(d));
-
-            }
+            buildings[i].material.SetFloat("_Transparency", cutoff.Evaluate(d));
 
 
 

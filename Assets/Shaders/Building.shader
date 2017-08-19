@@ -7,7 +7,7 @@
 	}
 	SubShader
 	{
-            Tags {"Queue"="Transparent" "IgnoreProjector"="True"}
+        Tags {"Queue"="Transparent+1" "IgnoreProjector"="True"}
 
         ZWrite Off
         Blend SrcAlpha OneMinusSrcAlpha
