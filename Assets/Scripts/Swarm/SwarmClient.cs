@@ -57,8 +57,11 @@ public class SwarmClient : MonoBehaviour {
                 continue;
             }
 
+
             //calculate effect
             SwarmEffect effector = info.effector;
+            if(effector == null)
+                continue;
 
             if(Mathf.Abs(effector.max_excitement_per_tourist) < Mathf.Abs(info.excitement_received)){
                 continue;
