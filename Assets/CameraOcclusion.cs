@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraOcclusion : MonoBehaviour {
-	// Use this for initialization
-	void Start ()
-    {
-		
-	}
-	
-	// Update is called once per frame
-	void Update ()
-    {
-        
-	}
+
+    public Transform camera;
+    public Transform guide;
+
+    private MeshRenderer[] buildings;
+
+
+    public void Start(){
+
+    }
+
+    public void Update(){
+
+    }
 }
