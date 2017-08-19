@@ -323,7 +323,8 @@ MonoBehaviour:
     next: 0
   icon_prefab: {fileID: 1257870066201516, guid: ebc755cc294f34d629dc541bc325c19d,
     type: 2}
-  icon_delay: 0
+  icon_offset: {x: 0, y: 2, z: 0}
+  icon_delay: 0.25
 --- !u!114 &114604480140314636
 MonoBehaviour:
   m_ObjectHideFlags: 1

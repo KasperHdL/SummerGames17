@@ -13,8 +13,8 @@ public class LookAtCamera : MonoBehaviour {
 	
 	void Update () {
 
-        transform.LookAt(transform.position - (camera.transform.position - transform.position));
-        return;
+//        transform.LookAt(transform.position - (camera.transform.position - transform.position));
+ //       return;
 
         Vector3 delta = camera.transform.position - transform.position;
         delta.y = 0;

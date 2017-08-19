@@ -2304,11 +2304,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114116666032543544, guid: ea5def7ba7d534383b6d05ad4293b27c,
-        type: 2}
-      propertyPath: icon_delay
-      value: 0.25
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ea5def7ba7d534383b6d05ad4293b27c, type: 2}
   m_IsPrefabParent: 0
@@ -16776,6 +16771,16 @@ Prefab:
       propertyPath: target
       value: 
       objectReference: {fileID: 1897801249}
+    - target: {fileID: 114940908897273776, guid: a9c27342094ab41359232b5c3c4073fd,
+        type: 2}
+      propertyPath: offset.y
+      value: -12.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114940908897273776, guid: a9c27342094ab41359232b5c3c4073fd,
+        type: 2}
+      propertyPath: offset.z
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a9c27342094ab41359232b5c3c4073fd, type: 2}
   m_IsPrefabParent: 0
@@ -21472,14 +21477,14 @@ MonoBehaviour:
       outSlope: -1.3354622
       tangentMode: 0
     - serializedVersion: 2
-      time: 0.91918945
-      value: 0.25202942
-      inSlope: 0
-      outSlope: 0
+      time: 0.8368702
+      value: 0.1590856
+      inSlope: -0.5762773
+      outSlope: -0.5762773
       tangentMode: 0
     - serializedVersion: 2
       time: 1.0012382
-      value: 0.22857748
+      value: 0.1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
