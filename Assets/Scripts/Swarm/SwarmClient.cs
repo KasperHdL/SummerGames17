@@ -7,6 +7,8 @@ public class SwarmClient : MonoBehaviour {
     [HideInInspector]public static int id_counter;
     [HideInInspector]public int id;
 
+    [Range(-1,1)] public float excitement = 0;
+
     public bool debug;
 
     public float move_force;
@@ -53,6 +55,15 @@ public class SwarmClient : MonoBehaviour {
 
             //calculate effect
             SwarmEffect effector = info.effector;
+
+            if(Mathf.Abs(effector.max_excitement_per_tourist) < Mathf.Abs(info.excitement_received)){
+                continue;
+            }else{
+                float change = effector.excitement_per_second * Time.deltaTime;
+                excitement += change;
+                info.excitement_received += change;
+
+            }
 
             Vector3 delta = transform.position - effector.transform.position;
             float effect_distance = delta.magnitude;
@@ -101,7 +112,7 @@ public class SwarmClient : MonoBehaviour {
         if(!effects.ContainsKey(effectInfo.id)){
             effects.Add(effectInfo.id, effectInfo);
         }else{
-            effects[effectInfo.id] = effectInfo;
+            effects[effectInfo.id].timestamp_end = effectInfo.timestamp_end;
         }
     }
 

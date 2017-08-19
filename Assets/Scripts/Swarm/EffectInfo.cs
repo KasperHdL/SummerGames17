@@ -7,6 +7,8 @@ public class EffectInfo{
     public float timestamp_end;
     public SwarmEffect effector;
 
+    public float excitement_received;
+
     public EffectInfo(){}
 }
 

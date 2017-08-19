@@ -6,6 +6,7 @@ public class Tourist : MonoBehaviour {
 
     private Camera camera;
 
+
     public Material[] materials;
 
 

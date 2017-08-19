@@ -14,6 +14,10 @@ public class SwarmEffect : MonoBehaviour {
     [Range(0,1)]public float persuasion;
     public float duration;
 
+    public float max_excitement_per_tourist;
+
+    public float excitement_per_second;
+
     public AnimationCurve range_effect;
     public float multiplier = 1;
 
@@ -34,6 +38,7 @@ public class SwarmEffect : MonoBehaviour {
 
         SwarmClient client = coll.GetComponent<SwarmClient>();
         if(client == null || !allow_triggers) return;
+
         client.Effect(CalcEffect(client));
 
     }
@@ -43,6 +48,7 @@ public class SwarmEffect : MonoBehaviour {
 
         SwarmClient client = coll.GetComponent<SwarmClient>();
         if(client == null || !allow_triggers) return;
+
         client.Effect(CalcEffect(client));
 
     }
@@ -64,6 +70,7 @@ public class SwarmEffect : MonoBehaviour {
         info.id = id;
         info.timestamp_end = Time.time + duration;
         info.effector = this;
+
 
         return info;
     }

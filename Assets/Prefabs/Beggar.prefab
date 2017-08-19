@@ -114,6 +114,8 @@ MonoBehaviour:
   type: 1
   persuasion: 0.19
   duration: 0.5
+  max_excitement_per_tourist: -0.5
+  excitement_per_second: -0.1
   range_effect:
     serializedVersion: 2
     m_Curve:
@@ -133,9 +135,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 0
   multiplier: 35
-  on_enter: 1
+  on_enter: 0
   on_stay: 1
-  on_exit: 1
+  on_exit: 0
   direction: {x: 0, y: 0, z: 0}
 --- !u!136 &136046540613517498
 CapsuleCollider:
