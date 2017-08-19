@@ -234,6 +234,8 @@ MonoBehaviour:
   type: 2
   persuasion: 0.73
   duration: 1
+  max_excitement_per_tourist: 0
+  excitement_per_second: 0
   range_effect:
     serializedVersion: 2
     m_Curve:
@@ -311,6 +313,8 @@ MonoBehaviour:
   type: 1
   persuasion: 1
   duration: 1
+  max_excitement_per_tourist: 0
+  excitement_per_second: 0
   range_effect:
     serializedVersion: 2
     m_Curve:
@@ -349,6 +353,8 @@ MonoBehaviour:
   type: 3
   persuasion: 0.92
   duration: 1
+  max_excitement_per_tourist: 0
+  excitement_per_second: 0
   range_effect:
     serializedVersion: 2
     m_Curve:
