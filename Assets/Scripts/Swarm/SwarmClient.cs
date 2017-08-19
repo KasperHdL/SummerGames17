@@ -31,7 +31,14 @@ public class SwarmClient : MonoBehaviour {
     public float surrounding_effect;
 
 
+    private int type;
+    public Material[] materials;
+    public AudioClip[] clips_happy;
+    public AudioClip[] clips_sad;
+    [Range(0,1)]public float volume;
+    private static int num_clips_per_type = 3;
 
+    public MeshRenderer model;
 
     private Rigidbody body;
 
@@ -40,6 +47,10 @@ public class SwarmClient : MonoBehaviour {
         body = GetComponent<Rigidbody>();
 
         effects = new Dictionary<int, EffectInfo>();
+
+
+        type = Random.Range(0,materials.Length);
+        model.material = materials[type];
     }
 
     void Update(){
@@ -112,6 +123,10 @@ public class SwarmClient : MonoBehaviour {
             GameObject g = Instantiate(excitement_prefab, transform.position, Quaternion.identity) as GameObject;
 
             g.GetComponent<Excitement>().Init(change);
+
+            //play audio
+            int index = Random.Range(0, num_clips_per_type) + type * num_clips_per_type;
+            AudioSource.PlayClipAtPoint(change > 0 ? clips_happy[index] : clips_sad[index], transform.position, volume);
 
         }
 

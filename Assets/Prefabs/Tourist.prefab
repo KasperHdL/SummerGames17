@@ -53,8 +53,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1058587921993050}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.94, y: 1, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4400005, y: 1, z: -46.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4063910819345824}
@@ -139,10 +139,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bc5d23331a3b4242b106288fe6ad37a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  materials:
-  - {fileID: 2100000, guid: 71591c3e47e814c46ab09e743a9ff8d0, type: 2}
-  - {fileID: 2100000, guid: f014757b6c11d492793181cb8852b909, type: 2}
-  - {fileID: 2100000, guid: eef9b194d042b4f799083061396df118, type: 2}
 --- !u!114 &114830836758441998
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -226,6 +222,32 @@ MonoBehaviour:
     m_RotationOrder: 0
   forward_range: 1
   surrounding_effect: 0.99
+  materials:
+  - {fileID: 2100000, guid: 71591c3e47e814c46ab09e743a9ff8d0, type: 2}
+  - {fileID: 2100000, guid: f014757b6c11d492793181cb8852b909, type: 2}
+  - {fileID: 2100000, guid: eef9b194d042b4f799083061396df118, type: 2}
+  clips_happy:
+  - {fileID: 8300000, guid: d391a86e597554b01aee75a68d931992, type: 3}
+  - {fileID: 8300000, guid: 42d3078d8462746d3bcfc398f139d013, type: 3}
+  - {fileID: 8300000, guid: cdb6e520629a34364b50e27f68fd192a, type: 3}
+  - {fileID: 8300000, guid: 1ef5d97d97c33466eaead276398f5b0d, type: 3}
+  - {fileID: 8300000, guid: 92262b32085084147a79b535db1f8d29, type: 3}
+  - {fileID: 8300000, guid: 03b82e2b3b5534f37931997f1ede6b28, type: 3}
+  - {fileID: 8300000, guid: 8c717dd7d26d745a28c44420bc503015, type: 3}
+  - {fileID: 8300000, guid: 13b84530e5b7445fca06822ffe8f5c0b, type: 3}
+  - {fileID: 8300000, guid: 0a861ea39317d4d96957e1f86e2d0a2e, type: 3}
+  clips_sad:
+  - {fileID: 8300000, guid: 57c51a62dda314b43b3da8e9d5b2f0ca, type: 3}
+  - {fileID: 8300000, guid: 46024d1c038ee4162b1a40203b45a78e, type: 3}
+  - {fileID: 8300000, guid: 9aaa1f04139e4448695d8601aacb238d, type: 3}
+  - {fileID: 8300000, guid: d9c0084046e05411c8357c8fc259b7ba, type: 3}
+  - {fileID: 8300000, guid: 55c0d54db0060427abb5995a7903fab4, type: 3}
+  - {fileID: 8300000, guid: 6406f794a9d524d0db0c998198e79a38, type: 3}
+  - {fileID: 8300000, guid: 44513cb954b084146ae9824fb44f4c83, type: 3}
+  - {fileID: 8300000, guid: c34b219eb14e1488eb6476fbf1971fe1, type: 3}
+  - {fileID: 8300000, guid: 8d00e937ab3e847429ce07eff1915f93, type: 3}
+  volume: 0.5
+  model: {fileID: 23387024347184792}
 --- !u!136 &136759362919242612
 CapsuleCollider:
   m_ObjectHideFlags: 1
