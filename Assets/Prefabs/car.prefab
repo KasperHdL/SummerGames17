@@ -72,6 +72,8 @@ GameObject:
   - component: {fileID: 33983393317034388}
   - component: {fileID: 23455310898586422}
   - component: {fileID: 65979421590796756}
+  - component: {fileID: 65074440514968546}
+  - component: {fileID: 114201350113692814}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -251,6 +253,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1954772515458340}
   m_Mesh: {fileID: 4300000, guid: 02aa1cbf41c80804ea8ae29f351cea94, type: 3}
+--- !u!65 &65074440514968546
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1954772515458340}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 2, z: 1.0740844}
+  m_Center: {x: -0.00000023932282, y: -0.00000006050889, z: -0.030341119}
 --- !u!65 &65979421590796756
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -263,6 +277,46 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4, y: 1.2910893, z: 1.0740844}
   m_Center: {x: -0.00000023932282, y: -0.00000006050889, z: -0.030341119}
+--- !u!114 &114201350113692814
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1954772515458340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 805b4667bce8943d3baf40eebb54474d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allow_triggers: 1
+  type: 1
+  persuasion: 1
+  duration: 0.1
+  max_excitement_per_tourist: -1000
+  excitement_per_second: -10
+  range_effect:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  multiplier: 1
+  on_enter: 1
+  on_stay: 0
+  on_exit: 0
+  direction: {x: 0, y: 0, z: 0}
 --- !u!114 &114524399868418178
 MonoBehaviour:
   m_ObjectHideFlags: 1
