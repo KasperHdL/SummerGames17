@@ -11,8 +11,9 @@ public class SwarmClient : MonoBehaviour {
 
     public bool debug;
 
-    public GameObject excitement_prefab;
+    public GameObject icon_prefab;
     public int amount_change_spawn_icon;
+    public Vector3 icon_offset;
 
     public float move_force;
 
@@ -124,7 +125,7 @@ public class SwarmClient : MonoBehaviour {
         if(Mathf.Abs(Mathf.Round(excitement*10) - Mathf.Round(before * 10)) >= amount_change_spawn_icon){
             float change = excitement - before;
 
-            GameObject g = Instantiate(excitement_prefab, transform.position, Quaternion.identity) as GameObject;
+            GameObject g = Instantiate(icon_prefab, transform.position + icon_offset, Quaternion.identity) as GameObject;
 
             bool isHappy = change > 0;
 

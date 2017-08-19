@@ -11,6 +11,7 @@ public class Guide : MonoBehaviour {
     public GuideAction[] actions;
 
     public GameObject icon_prefab;
+    public Vector3 icon_offset;
     public float icon_delay;
 
 	// Use this for initialization
@@ -71,7 +72,7 @@ public class Guide : MonoBehaviour {
                     //instantiate icon
 
 
-                    GameObject g = Instantiate(icon_prefab, transform.position, Quaternion.identity) as GameObject;
+                    GameObject g = Instantiate(icon_prefab, transform.position + icon_offset, Quaternion.identity) as GameObject;
                     g.GetComponent<FlyingIcon>().Init(a.icon);
 
                     a.next = Time.time + icon_delay;
