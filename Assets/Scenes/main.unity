@@ -15690,6 +15690,11 @@ Transform:
   m_Father: {fileID: 1495684295}
   m_RootOrder: 123
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1123797774 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4963540216687972, guid: a9c27342094ab41359232b5c3c4073fd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1209084405}
 --- !u!1 &1127137719
 GameObject:
   m_ObjectHideFlags: 0
@@ -20775,6 +20780,7 @@ GameObject:
   - component: {fileID: 1495684295}
   - component: {fileID: 1495684294}
   - component: {fileID: 1495684296}
+  - component: {fileID: 1495684297}
   m_Layer: 0
   m_Name: Buildings
   m_TagString: Untagged
@@ -21708,6 +21714,43 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3ca5f33d64508d344a4ec6bfc0e0e18e, type: 2}
   - {fileID: 2100000, guid: fedf04fda782b6e4fac6a4cabfc9d109, type: 2}
   - {fileID: 2100000, guid: 4d12eb4a3f015144fa2b0311729f2353, type: 2}
+--- !u!114 &1495684297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1495684293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4b83a6377ad8d54f8f661a53db7a25b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 1123797774}
+  guide: {fileID: 1897801249}
+  cutoff:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: -0.00063059677
+      value: 0.11264629
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.094214246
+      value: 0.4054298
+      inSlope: 8.205175
+      outSlope: 8.205175
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.13114014
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &1510010299
 GameObject:
   m_ObjectHideFlags: 0
