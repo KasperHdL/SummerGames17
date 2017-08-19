@@ -1,6 +1,7 @@
-- Camera
+- Camera(Kasper)
 - Scene Setup
 	- Bus
+    - Beggars, Musicians and so on
 	- Checkpoints
 		- Arch
 		- Fountain
@@ -9,3 +10,8 @@
 - Time Left / Countdown
 	- GUI
 	- Scripts
+- End Game
+    - Score Count
+
+
+- Menu !?
