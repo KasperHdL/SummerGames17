@@ -2,23 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tourist : MonoBehaviour {
+public class LookAtCamera : MonoBehaviour {
 
     private Camera camera;
 
-
-    public Material[] materials;
-
-
-	// Use this for initialization
 	void Start () {
         camera = Camera.main;
 
-        GetComponent<MeshRenderer>().material = materials[Random.Range(0,materials.Length)];
-		
 	}
 	
-	// Update is called once per frame
 	void Update () {
 
         transform.LookAt(transform.position - (camera.transform.position - transform.position));
