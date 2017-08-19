@@ -12,7 +12,7 @@ public class Grower : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        end = Time.time + end_scale;
+        end = Time.time + duration;
         start_scale = transform.localScale.x;
 		
 	}
@@ -21,8 +21,7 @@ public class Grower : MonoBehaviour {
 	void Update () {
         if(end > Time.time){
             float t = (end - Time.time) / duration;
-            transform.localScale = Vector3.one * (start_scale + end_scale * (1- t));
-            print(t);
+            transform.localScale = Vector3.one * (start_scale + (end_scale - start_scale) * (1-t));
 
         }else{
             Destroy(gameObject);
