@@ -9483,6 +9483,11 @@ Prefab:
       propertyPath: gameHandler
       value: 
       objectReference: {fileID: 412815135}
+    - target: {fileID: 114562772682475090, guid: 472ee7cc568cf924fbdba35cb358659a,
+        type: 2}
+      propertyPath: enterClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 18d2d5ffad1eaf04ab5c49cea843cd16, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 472ee7cc568cf924fbdba35cb358659a, type: 2}
   m_IsPrefabParent: 0
