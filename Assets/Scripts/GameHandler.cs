@@ -27,6 +27,7 @@ public class GameHandler : MonoBehaviour {
     public Text timer;
     public Text score_text;
     public Text num_tourist_text;
+    public Text press_to_play;
 
     public Canvas start_ui;
     public Canvas end_ui;
@@ -53,7 +54,13 @@ public class GameHandler : MonoBehaviour {
             }
             num_tourist_text.text = (int)(num_tourist * t) + "";
 
-            if( Time.time < start_score_count_time + score_duration){
+            if( Time.time > start_score_count_time + score_duration){
+                float a = (Time.time - (start_score_count_time + score_duration));
+                if(a > 1) a = 1;
+                Color c = press_to_play.color;
+                c.a = a;
+                press_to_play.color = c;
+
                 if(     Input.GetKeyDown ( KeyCode.X) ||
                         Input.GetKeyDown ( KeyCode.Z) ||
                         Input.GetKeyDown ( KeyCode.UpArrow) ||
@@ -111,6 +118,7 @@ public class GameHandler : MonoBehaviour {
     }
 
     public void RestartGame(){
+        print("HALLO");
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
 
     }
