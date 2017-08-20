@@ -118,8 +118,9 @@ public class GameHandler : MonoBehaviour {
     }
 
     public void RestartGame(){
-        print("HALLO");
-        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
+        end_game = false;
+        game_started = false;
+        Application.LoadLevel(0);
 
     }
 }
