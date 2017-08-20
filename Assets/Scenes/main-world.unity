@@ -4828,6 +4828,16 @@ Prefab:
       propertyPath: target
       value: 
       objectReference: {fileID: 1774667735}
+    - target: {fileID: 114940908897273776, guid: a9c27342094ab41359232b5c3c4073fd,
+        type: 2}
+      propertyPath: offset.y
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114940908897273776, guid: a9c27342094ab41359232b5c3c4073fd,
+        type: 2}
+      propertyPath: offset.z
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a9c27342094ab41359232b5c3c4073fd, type: 2}
   m_IsPrefabParent: 0
@@ -16108,14 +16118,14 @@ MonoBehaviour:
       outSlope: 0
       tangentMode: 0
     - serializedVersion: 2
-      time: 0.20600462
-      value: 1.0002413
+      time: 0.1257739
+      value: 0.976758
       inSlope: -0.7843971
       outSlope: -0.7843971
       tangentMode: 0
     - serializedVersion: 2
-      time: 0.5247958
-      value: 0.6194892
+      time: 0.30390954
+      value: 0.5067878
       inSlope: -1.3354622
       outSlope: -1.3354622
       tangentMode: 0
