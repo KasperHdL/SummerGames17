@@ -159,6 +159,7 @@ MonoBehaviour:
   icon_offset: {x: 0, y: 1.5, z: 0}
   chance_to_spawn: 7
   random_cum: 0
+  dist_to_sound: 2
   move_force: 1000
   direction: {x: 0, y: 0, z: 0}
   curve:
@@ -229,6 +230,15 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 71591c3e47e814c46ab09e743a9ff8d0, type: 2}
   - {fileID: 2100000, guid: f014757b6c11d492793181cb8852b909, type: 2}
   - {fileID: 2100000, guid: eef9b194d042b4f799083061396df118, type: 2}
+  clips_steps:
+  - {fileID: 8300000, guid: dcf3b028ea55bfc4eba30b012c05f8c8, type: 3}
+  - {fileID: 8300000, guid: 725ca7d5f326e1f4f895aa6a749fc5fc, type: 3}
+  - {fileID: 8300000, guid: 2f3cc34decf548b4c9a7fcd32558ac5a, type: 3}
+  - {fileID: 8300000, guid: f308dafda5060ed43a0c8168d8e81bd7, type: 3}
+  - {fileID: 8300000, guid: ce4c5870c8c89c043a1a3b99d7282a6c, type: 3}
+  - {fileID: 8300000, guid: 13e4d8049badc8543b29459e3ac67154, type: 3}
+  - {fileID: 8300000, guid: e5efe016d7361a649b419d3a5db6cc45, type: 3}
+  - {fileID: 8300000, guid: efba9631a90147f4e9146938787b8bf4, type: 3}
   clips_happy:
   - {fileID: 8300000, guid: d391a86e597554b01aee75a68d931992, type: 3}
   - {fileID: 8300000, guid: 42d3078d8462746d3bcfc398f139d013, type: 3}

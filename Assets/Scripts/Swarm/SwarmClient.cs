@@ -16,6 +16,7 @@ public class SwarmClient : MonoBehaviour {
     public Vector3 icon_offset;
     public float chance_to_spawn;
     public float random_cum;
+    public float dist_to_sound;
 
     public float move_force;
 
@@ -36,6 +37,7 @@ public class SwarmClient : MonoBehaviour {
 
     private int type;
     public Material[] materials;
+    public AudioClip[] clips_steps;
     public AudioClip[] clips_happy;
     public AudioClip[] clips_sad;
     [Range(0,1)]public float volume;
@@ -47,6 +49,8 @@ public class SwarmClient : MonoBehaviour {
     public Material icon_sad;
 
     private Rigidbody body;
+    private float dist_walked;
+    private Vector3 lastPos;
 
     void Start(){
         id = id_counter++;
@@ -59,7 +63,6 @@ public class SwarmClient : MonoBehaviour {
     }
 
     void Update(){
-
         Vector3 surroundings = CalcSurroundEffect();
 
         //calculate effects;
@@ -131,7 +134,15 @@ public class SwarmClient : MonoBehaviour {
         direction = (surroundings * surrounding_effect) + effect_direction;
         body.AddForce(direction * Time.deltaTime * move_force);
 
-        if(debug){
+        dist_walked += Vector3.Distance(transform.position, lastPos) + Random.Range(0.1f,0.2f);
+        if(dist_walked > dist_to_sound)
+        {
+            //AudioSource.PlayClipAtPoint(clips_steps[Random.Range(0, clips_steps.Length)], transform.position, 0.2f);
+            dist_walked = 0;
+        }
+        lastPos = transform.position;
+
+        if (debug){
             Debug.DrawRay(transform.position, direction.normalized, Color.green);
             Debug.DrawRay(transform.position, effect_direction, Color.yellow);
             Debug.DrawRay(transform.position, surroundings, Color.red);
