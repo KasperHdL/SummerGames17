@@ -23,6 +23,7 @@ public class EnterBus : MonoBehaviour {
             //count excitement
 
             GameHandler.score += coll.GetComponent<SwarmClient>().excitement;
+            GameHandler.num_tourist++;
 
             Destroy(coll.gameObject);
 

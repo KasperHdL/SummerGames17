@@ -9,6 +9,7 @@ public class GameHandler : MonoBehaviour {
     public static bool end_game = false;
 
     public static float score = 0;
+    public static int num_tourist = 0;
 
 
     public AnimationCurve score_count_percent_curve;
