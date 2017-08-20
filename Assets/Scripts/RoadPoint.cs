@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using System;
 
 public class RoadPoint : MonoBehaviour {
@@ -19,6 +21,7 @@ public class RoadPoint : MonoBehaviour {
 		
 	}
 
+    #if UNITY_EDITOR
     // This is some disgusting code WOW
     // I AM SO SORRY I HAVEN'T DONE SOME PROPER SHIT IN A WHILE
     [ContextMenu("Create Point")]
@@ -31,6 +34,7 @@ public class RoadPoint : MonoBehaviour {
         connected.Add(p.GetComponent<RoadPoint>());
 
 	}
+#endif
 
     public void Delete()
     {
