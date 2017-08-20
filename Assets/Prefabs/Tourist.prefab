@@ -225,7 +225,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 0
   forward_range: 1
-  surrounding_effect: 0.99
+  surrounding_effect: 0.9
   materials:
   - {fileID: 2100000, guid: 71591c3e47e814c46ab09e743a9ff8d0, type: 2}
   - {fileID: 2100000, guid: f014757b6c11d492793181cb8852b909, type: 2}

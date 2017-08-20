@@ -8,6 +8,7 @@ public class GameHandler : MonoBehaviour {
     public static bool game_started = false;
     public static bool end_game = false;
 
+    private bool finished_audio = false;
     public float score = 0;
     public int num_tourist = 0;
     public bool force_end = false;
@@ -55,6 +56,13 @@ public class GameHandler : MonoBehaviour {
             num_tourist_text.text = (int)(num_tourist * t) + "";
 
             if( Time.time > start_score_count_time + score_duration){
+                if(!finished_audio){
+                    //AudioSource.PlayClipAtPoint(
+                    finished_audio = true;
+
+                }
+
+
                 float a = (Time.time - (start_score_count_time + score_duration));
                 if(a > 1) a = 1;
                 Color c = press_to_play.color;

@@ -381,7 +381,7 @@ MonoBehaviour:
   allow_triggers: 0
   type: 3
   persuasion: 0.92
-  duration: 1
+  duration: 0.1
   max_excitement_per_tourist: 0
   excitement_per_second: 0
   delay_between_icons: 0
