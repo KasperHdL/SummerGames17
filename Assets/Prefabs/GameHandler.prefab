@@ -51,5 +51,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a2c90f0e1a8b4173a3a9a129175a2d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finished_clip: {fileID: 0}
+  score: 0
+  num_tourist: 0
+  force_end: 0
+  minus_color: {r: 0.75, g: 0, b: 0, a: 1}
+  score_count_percent_curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  start_score_count_delay: 0.2
+  score_duration: 3
   max_time: 300
+  current_time: 0
+  minus: {fileID: 0}
   timer: {fileID: 0}
+  score_text: {fileID: 0}
+  num_tourist_text: {fileID: 0}
+  press_to_play: {fileID: 0}
+  start_ui: {fileID: 0}
+  end_ui: {fileID: 0}
+  enter_bus: {fileID: 0}

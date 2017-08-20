@@ -9,6 +9,9 @@ public class GameHandler : MonoBehaviour {
     public static bool end_game = false;
 
     private bool finished_audio = false;
+    public AudioClip finished_clip;
+
+
     public float score = 0;
     public int num_tourist = 0;
     public bool force_end = false;
@@ -57,7 +60,9 @@ public class GameHandler : MonoBehaviour {
 
             if( Time.time > start_score_count_time + score_duration){
                 if(!finished_audio){
-                    //AudioSource.PlayClipAtPoint(
+                    if(score > 0)
+                        AudioSource.PlayClipAtPoint(finished_clip, GameObject.FindWithTag("Player").transform.position, 1f);
+
                     finished_audio = true;
 
                 }
