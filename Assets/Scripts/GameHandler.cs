@@ -8,22 +8,25 @@ public class GameHandler : MonoBehaviour {
     public static bool game_started = false;
     public static bool end_game = false;
 
-    public static float score = 0;
-    public static int num_tourist = 0;
+    public float score = 0;
+    public int num_tourist = 0;
+    public bool force_end = false;
+    public Color minus_color;
 
 
     public AnimationCurve score_count_percent_curve;
     public float start_score_count_delay;
     public float score_duration;
-    private float score_count = 0;
     private float start_score_count_time;
 
     public float max_time;
     public float current_time;
     private float start_time;
 
+    public Text minus;
     public Text timer;
     public Text score_text;
+    public Text num_tourist_text;
 
     public Canvas start_ui;
     public Canvas end_ui;
@@ -32,17 +35,23 @@ public class GameHandler : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         start_ui.enabled = true;
+        end_ui.enabled = false;
 		
         timer.text = Mathf.RoundToInt(max_time) + "";
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if(end_game && start_score_count_time > Time.time){
+        if(end_game && start_score_count_time < Time.time){
             float t = score_count_percent_curve.Evaluate((Time.time - start_score_count_time) / score_duration);
             if(t >= 1) t = 1;
-            score_text.text = (int)(score * t) + "";
-            print(score_count);
+            score_text.text = (int)Mathf.Abs(score * t) + "";
+            if(score < 0){
+                minus.enabled = true;
+                score_text.color = minus_color;
+                minus.color = minus_color;
+            }
+            num_tourist_text.text = (int)(num_tourist * t) + "";
 
             if( Time.time < start_score_count_time + score_duration){
                 if(     Input.GetKeyDown ( KeyCode.X) ||
@@ -69,9 +78,13 @@ public class GameHandler : MonoBehaviour {
             current_time = Time.time - start_time;
             timer.text = Mathf.RoundToInt(max_time - current_time) + "";
 
-            if(current_time <= 0 || end_game){
+            if(current_time <= 0){
                 EndGame();
             }
+        }
+        if(force_end){
+            force_end = false;
+            EndGame();
         }
 	}
 
@@ -86,6 +99,10 @@ public class GameHandler : MonoBehaviour {
         end_game = true;
         enter_bus.allow_passengers = false;
 
+
+        score_text.text = "0";
+        num_tourist_text.text = "0";
+        minus.enabled = false;
         end_ui.enabled = true;
 
         //show points
