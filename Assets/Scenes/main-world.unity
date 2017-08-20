@@ -2486,6 +2486,11 @@ Prefab:
       propertyPath: enter_bus
       value: 
       objectReference: {fileID: 440132304}
+    - target: {fileID: 114258126365629498, guid: dfeff276a44c04731b38dd791d3b11c8,
+        type: 2}
+      propertyPath: finished_clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7b99f4f25566948eeae57161c3e48838, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dfeff276a44c04731b38dd791d3b11c8, type: 2}
   m_IsPrefabParent: 0
