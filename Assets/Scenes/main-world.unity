@@ -4626,6 +4626,21 @@ Prefab:
       propertyPath: target
       value: 
       objectReference: {fileID: 1774667735}
+    - target: {fileID: 20713733512016454, guid: a9c27342094ab41359232b5c3c4073fd,
+        type: 2}
+      propertyPath: m_RenderingPath
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 20713733512016454, guid: a9c27342094ab41359232b5c3c4073fd,
+        type: 2}
+      propertyPath: field of view
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 20713733512016454, guid: a9c27342094ab41359232b5c3c4073fd,
+        type: 2}
+      propertyPath: orthographic
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a9c27342094ab41359232b5c3c4073fd, type: 2}
   m_IsPrefabParent: 0
