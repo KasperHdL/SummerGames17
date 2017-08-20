@@ -547,6 +547,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -771,6 +776,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -1076,6 +1086,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -1204,6 +1219,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -1249,6 +1269,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -2321,6 +2346,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -2378,6 +2408,11 @@ Prefab:
       propertyPath: start_ui
       value: 
       objectReference: {fileID: 524227166}
+    - target: {fileID: 114258126365629498, guid: dfeff276a44c04731b38dd791d3b11c8,
+        type: 2}
+      propertyPath: enter_bus
+      value: 
+      objectReference: {fileID: 440132304}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dfeff276a44c04731b38dd791d3b11c8, type: 2}
   m_IsPrefabParent: 0
@@ -2465,6 +2500,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -2896,6 +2936,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -3097,6 +3142,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -3364,6 +3414,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -3542,6 +3597,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -3765,6 +3825,77 @@ Transform:
   m_PrefabParentObject: {fileID: 4008943102702282, guid: 79c9fbdb5f0954adc946c8667f665b5a,
     type: 2}
   m_PrefabInternal: {fileID: 266256681}
+--- !u!1 &261972247
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1214873312238380, guid: 472ee7cc568cf924fbdba35cb358659a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 261972248}
+  - component: {fileID: 261972250}
+  - component: {fileID: 261972249}
+  m_Layer: 0
+  m_Name: AOE (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &261972248
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4596161962032772, guid: 472ee7cc568cf924fbdba35cb358659a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 261972247}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -1.38, y: 0.99, z: -1.15}
+  m_LocalScale: {x: 1.7724761, y: 4.6872826, z: 1.7724766}
+  m_Children: []
+  m_Father: {fileID: 49103790}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!33 &261972249
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 261972247}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &261972250
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 261972247}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 254490ca786c843cb85bebb5b1715127, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &262424402
 GameObject:
   m_ObjectHideFlags: 0
@@ -4052,6 +4183,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -4344,6 +4480,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (79)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -4879,6 +5020,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -5343,6 +5489,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -5389,6 +5540,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -5434,6 +5590,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (69)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -5665,6 +5826,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -5973,9 +6139,20 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &440132304 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114562772682475090, guid: 472ee7cc568cf924fbdba35cb358659a,
+    type: 2}
+  m_PrefabInternal: {fileID: 699929834}
+  m_Script: {fileID: 11500000, guid: 7a9bf303886724d32b6d6bd6d2862c8b, type: 3}
 --- !u!1001 &441535463
 Prefab:
   m_ObjectHideFlags: 0
@@ -6069,6 +6246,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -6197,6 +6379,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (78)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -6495,6 +6682,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -6540,6 +6732,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -6941,6 +7138,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (72)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -6991,6 +7193,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -7342,6 +7549,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -7948,7 +8160,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 589097423}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -0, z: 4.36}
+  m_LocalPosition: {x: 0, y: -0, z: 4.03}
   m_LocalScale: {x: 14.915406, y: 14.915416, z: 14.915418}
   m_Children: []
   m_Father: {fileID: 49103790}
@@ -8035,6 +8247,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -8463,6 +8680,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (68)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -9943,6 +10165,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (77)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -10397,6 +10624,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -11279,6 +11511,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -11398,6 +11635,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -11694,6 +11936,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -13202,6 +13449,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -13848,6 +14100,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -13926,6 +14183,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -14308,6 +14570,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -14504,6 +14771,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -15133,6 +15405,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (66)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -16295,6 +16572,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -16340,6 +16622,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -17005,6 +17292,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -17289,6 +17581,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -17416,6 +17713,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -17637,6 +17939,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -17846,6 +18153,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -18242,6 +18554,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -19742,6 +20059,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -19912,6 +20234,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -20242,6 +20569,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -20411,6 +20743,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -20622,6 +20959,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -20715,6 +21057,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -20760,6 +21107,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -21346,6 +21698,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -21476,6 +21833,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -21912,6 +22274,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -22195,6 +22562,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (70)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -22322,6 +22694,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -22519,6 +22896,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -23627,6 +24009,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -23673,6 +24060,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -23718,6 +24110,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -23846,6 +24243,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -24154,6 +24556,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -24446,6 +24853,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -24615,6 +25027,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -25115,6 +25532,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -25965,6 +26387,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -26010,6 +26437,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -26221,6 +26653,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -26266,6 +26703,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -26595,6 +27037,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -26892,6 +27339,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -27118,6 +27570,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -27163,6 +27620,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -28319,6 +28781,11 @@ Prefab:
       propertyPath: m_Name
       value: Tourist (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
   m_IsPrefabParent: 0
@@ -28364,6 +28831,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
@@ -29285,6 +29757,11 @@ Prefab:
     - target: {fileID: 1058587921993050, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}
       propertyPath: m_Name
       value: Tourist (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114830836758441998, guid: 79c9fbdb5f0954adc946c8667f665b5a,
+        type: 2}
+      propertyPath: chance_to_spawn
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79c9fbdb5f0954adc946c8667f665b5a, type: 2}

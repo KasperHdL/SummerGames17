@@ -18,6 +18,8 @@ public class SwarmEffect : MonoBehaviour {
 
     public float excitement_per_second;
 
+    public float delay_between_icons;
+
     public AnimationCurve range_effect;
     public float multiplier = 1;
 
@@ -69,6 +71,7 @@ public class SwarmEffect : MonoBehaviour {
         EffectInfo info = new EffectInfo();
         info.id = id;
         info.timestamp_end = Time.time + duration;
+        info.next_icon = 0;
         info.effector = this;
 
 

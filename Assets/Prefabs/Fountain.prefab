@@ -268,7 +268,8 @@ MonoBehaviour:
   persuasion: 0.322
   duration: 1
   max_excitement_per_tourist: 25
-  excitement_per_second: 1
+  excitement_per_second: 5
+  delay_between_icons: 0.5
   range_effect:
     serializedVersion: 2
     m_Curve:
