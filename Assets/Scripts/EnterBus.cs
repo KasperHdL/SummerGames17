@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnterBus : MonoBehaviour {
 
+    public AudioClip enterClip;
     public GameHandler gameHandler;
     public bool allow_passengers = true;
 
@@ -25,6 +26,8 @@ public class EnterBus : MonoBehaviour {
 
             gameHandler.score += coll.GetComponent<SwarmClient>().excitement;
             gameHandler.num_tourist++;
+
+            AudioSource.PlayClipAtPoint(enterClip, coll.transform.position);
 
             Destroy(coll.gameObject);
 
