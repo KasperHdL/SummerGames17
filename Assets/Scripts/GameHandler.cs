@@ -15,6 +15,7 @@ public class GameHandler : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        start_ui.enabled = true;
 		
         timer.text = Mathf.RoundToInt(max_time) + "";
 	}
