@@ -40,10 +40,10 @@ MonoBehaviour:
         stationaryBlending: 0.95
         motionBlending: 0.85
   ambientOcclusion:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
-      intensity: 1.09
-      radius: 1.02
+      intensity: 2.34
+      radius: 8.38
       sampleCount: 10
       downsampling: 1
       forceForwardCompatibility: 0
@@ -71,10 +71,10 @@ MonoBehaviour:
   depthOfField:
     m_Enabled: 0
     m_Settings:
-      focusDistance: 24.8
-      aperture: 9.7
-      focalLength: 277
-      useCameraFov: 1
+      focusDistance: 20.23
+      aperture: 6.9
+      focalLength: 194
+      useCameraFov: 0
       kernelSize: 1
   motionBlur:
     m_Enabled: 0
@@ -112,7 +112,7 @@ MonoBehaviour:
     m_Enabled: 0
     m_Settings:
       tonemapping:
-        tonemapper: 0
+        tonemapper: 1
         neutralBlackIn: 0.1
         neutralWhiteIn: 1.89
         neutralBlackOut: 0
@@ -120,9 +120,9 @@ MonoBehaviour:
         neutralWhiteLevel: 5.3
         neutralWhiteClip: 10
       basic:
-        postExposure: 2.02
-        temperature: 0
-        tint: 0
+        postExposure: 1.5
+        temperature: -6
+        tint: -2
         hueShift: 0
         saturation: 1
         contrast: 1
@@ -295,7 +295,7 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       colored: 0
-      intensity: 0.141
+      intensity: 0.11
       size: 0.63
       luminanceContribution: 0.87
   vignette:
