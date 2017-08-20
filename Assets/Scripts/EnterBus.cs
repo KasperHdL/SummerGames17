@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnterBus : MonoBehaviour {
 
+    public GameHandler gameHandler;
     public bool allow_passengers = true;
 
 	// Use this for initialization
@@ -22,15 +23,15 @@ public class EnterBus : MonoBehaviour {
 
             //count excitement
 
-            GameHandler.score += coll.GetComponent<SwarmClient>().excitement;
-            GameHandler.num_tourist++;
+            gameHandler.score += coll.GetComponent<SwarmClient>().excitement;
+            gameHandler.num_tourist++;
 
             Destroy(coll.gameObject);
 
         }else if(coll.GetComponent<Guide>() != null){
             //end game
 
-            GameHandler.end_game = true;
+            gameHandler.force_end = true;
 //            Destroy(coll.gameObject);
 
         }

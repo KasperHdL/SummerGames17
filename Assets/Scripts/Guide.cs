@@ -22,7 +22,7 @@ public class Guide : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if(!GameHandler.game_started) return;
+        if(!GameHandler.game_started || GameHandler.end_game) return;
 
         //movement
         Vector2 input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
