@@ -4,16 +4,8 @@ using UnityEngine;
 
 public class Flashing : MonoBehaviour {
     public GameObject flash;
+    public AudioClip[] sounds;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
-	}
 
     void OnTriggerStay(Collider other)
     {
@@ -24,6 +16,7 @@ public class Flashing : MonoBehaviour {
         if(Random.Range(0, 500) >= 499) {
             GameObject obj = Instantiate(flash, client.transform.position + (Vector3.up * 2), Quaternion.identity);
             Destroy(obj, 0.3f);
+            AudioSource.PlayClipAtPoint(sounds[Random.Range(0, sounds.Length)], other.transform.position);
         }
     }
 }
