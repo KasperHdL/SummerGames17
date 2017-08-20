@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnterBus : MonoBehaviour {
 
+    public bool allow_passengers = true;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -15,12 +17,22 @@ public class EnterBus : MonoBehaviour {
 	}
 
     void OnTriggerEnter(Collider coll){
-        if(coll.GetComponent<SwarmClient>() == null) return;
+        if(!allow_passengers) return;
+        if(coll.GetComponent<SwarmClient>() != null){
 
-        //count excitement
+            //count excitement
 
-        Destroy(coll.gameObject);
+            GameHandler.score += coll.GetComponent<SwarmClient>().excitement;
 
+            Destroy(coll.gameObject);
+
+        }else if(coll.GetComponent<Guide>() != null){
+            //end game
+
+            GameHandler.end_game = true;
+            Destroy(coll.gameObject);
+
+        }
 
 
     }

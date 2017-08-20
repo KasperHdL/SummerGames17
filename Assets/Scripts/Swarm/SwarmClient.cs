@@ -14,6 +14,8 @@ public class SwarmClient : MonoBehaviour {
     public GameObject icon_prefab;
     public int amount_change_spawn_icon;
     public Vector3 icon_offset;
+    public float chance_to_spawn;
+    public float random_cum;
 
     public float move_force;
 
@@ -52,7 +54,6 @@ public class SwarmClient : MonoBehaviour {
 
         effects = new Dictionary<int, EffectInfo>();
 
-
         type = Random.Range(0,materials.Length);
         model.material = materials[type];
     }
@@ -85,6 +86,12 @@ public class SwarmClient : MonoBehaviour {
                 excitement += change;
                 info.excitement_received += change;
 
+                if(change != 0 && info.next_icon < Time.time){
+                    info.next_icon = Time.time + effector.delay_between_icons;
+
+                    SpawnIcon(change > 0);
+
+                }
 
             }
 
@@ -119,25 +126,6 @@ public class SwarmClient : MonoBehaviour {
                 Debug.DrawRay(transform.position + v.normalized, v * effector.persuasion * effect_mult, Color.yellow);
             }
         }
-
-
-        //Spawn Icon
-        if(Mathf.Abs(Mathf.Round(excitement*10) - Mathf.Round(before * 10)) >= amount_change_spawn_icon){
-            float change = excitement - before;
-
-            GameObject g = Instantiate(icon_prefab, transform.position + icon_offset, Quaternion.identity) as GameObject;
-
-            bool isHappy = change > 0;
-
-            g.GetComponent<FlyingIcon>().Init(isHappy ? icon_happy : icon_sad);
-
-            //play audio
-            int index = Random.Range(0, num_clips_per_type) + type * num_clips_per_type;
-            AudioSource.PlayClipAtPoint(change > 0 ? clips_happy[index] : clips_sad[index], transform.position, volume);
-
-        }
-
-
 
 
         direction = (surroundings * surrounding_effect) + effect_direction;
@@ -177,6 +165,20 @@ public class SwarmClient : MonoBehaviour {
         }
 
         return dir.normalized;
+    }
+
+    public void SpawnIcon(bool isHappy){
+
+
+        GameObject g = Instantiate(icon_prefab, transform.position + icon_offset, Quaternion.identity) as GameObject;
+
+
+        g.GetComponent<FlyingIcon>().Init(isHappy ? icon_happy : icon_sad);
+
+        //play audio
+        int index = Random.Range(0, num_clips_per_type) + type * num_clips_per_type;
+        AudioSource.PlayClipAtPoint(isHappy ? clips_happy[index] : clips_sad[index], transform.position, volume);
+
     }
 
 }
