@@ -543,7 +543,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1.2
+  MinDistance: 2
   MaxDistance: 100
   Pan2D: 0
   rolloffMode: 0
@@ -573,7 +573,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 1
+      value: 0.97
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -8351,7 +8351,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1.2
+  MinDistance: 2
   MaxDistance: 100
   Pan2D: 0
   rolloffMode: 0
@@ -8381,7 +8381,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 1
+      value: 0.97
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -9340,7 +9340,7 @@ Prefab:
     - target: {fileID: 114562772682475090, guid: 472ee7cc568cf924fbdba35cb358659a,
         type: 2}
       propertyPath: volume
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 472ee7cc568cf924fbdba35cb358659a, type: 2}
@@ -10105,7 +10105,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1.2
+  MinDistance: 2
   MaxDistance: 100
   Pan2D: 0
   rolloffMode: 0
@@ -10135,7 +10135,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 1
+      value: 0.97
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -17304,7 +17304,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1.2
+  MinDistance: 2
   MaxDistance: 100
   Pan2D: 0
   rolloffMode: 0
@@ -17334,7 +17334,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 1
+      value: 0.97
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -24022,7 +24022,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1.2
+  MinDistance: 2
   MaxDistance: 100
   Pan2D: 0
   rolloffMode: 0
@@ -24052,7 +24052,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 1
+      value: 0.97
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -25844,7 +25844,7 @@ MeshRenderer:
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
+  m_ScaleInLightmap: 0.01
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0

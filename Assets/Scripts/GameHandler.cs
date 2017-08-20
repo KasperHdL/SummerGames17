@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+using UnityEngine.SceneManagement;
+
 public class GameHandler : MonoBehaviour {
 
     public static bool game_started = false;
@@ -133,7 +135,6 @@ public class GameHandler : MonoBehaviour {
     public void RestartGame(){
         end_game = false;
         game_started = false;
-        Application.LoadLevel(0);
-
+        SceneManager.LoadScene(1, LoadSceneMode.Single);
     }
 }
