@@ -36,6 +36,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4477134117669722}
+  - component: {fileID: 64046806077419070}
   m_Layer: 0
   m_Name: Arch
   m_TagString: Untagged
@@ -109,3 +110,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1619975389128586}
   m_Mesh: {fileID: 4300002, guid: 6fdd67556f2e4e2459510c501b4f66b0, type: 3}
+--- !u!64 &64046806077419070
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1653243134234470}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 0}
