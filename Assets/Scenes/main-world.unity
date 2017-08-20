@@ -2407,6 +2407,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114258126365629498, guid: dfeff276a44c04731b38dd791d3b11c8,
+        type: 2}
+      propertyPath: score_count_percent_curve.m_Curve.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4108247747701844, guid: dfeff276a44c04731b38dd791d3b11c8, type: 2}
       propertyPath: m_LocalPosition.x
       value: 1029
@@ -2459,6 +2464,31 @@ Prefab:
       propertyPath: enter_bus
       value: 
       objectReference: {fileID: 440132304}
+    - target: {fileID: 114258126365629498, guid: dfeff276a44c04731b38dd791d3b11c8,
+        type: 2}
+      propertyPath: score_count_percent_curve.m_Curve.Array.data[1].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114258126365629498, guid: dfeff276a44c04731b38dd791d3b11c8,
+        type: 2}
+      propertyPath: score_count_percent_curve.m_Curve.Array.data[1].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114258126365629498, guid: dfeff276a44c04731b38dd791d3b11c8,
+        type: 2}
+      propertyPath: score_count_percent_curve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114258126365629498, guid: dfeff276a44c04731b38dd791d3b11c8,
+        type: 2}
+      propertyPath: start_score_count_delay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114258126365629498, guid: dfeff276a44c04731b38dd791d3b11c8,
+        type: 2}
+      propertyPath: score_duration
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dfeff276a44c04731b38dd791d3b11c8, type: 2}
   m_IsPrefabParent: 0
@@ -25012,8 +25042,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -13.585, y: 9.515}
-  m_SizeDelta: {x: -27.17, y: -19.03}
+  m_AnchoredPosition: {x: -10.24, y: 6.35}
+  m_SizeDelta: {x: -20.48, y: -12.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1879305214
 MonoBehaviour:
@@ -25047,7 +25077,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press Space to Start
+  m_Text: Press Any Key to Start
 --- !u!222 &1879305215
 CanvasRenderer:
   m_ObjectHideFlags: 0

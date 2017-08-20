@@ -30,7 +30,7 @@ public class EnterBus : MonoBehaviour {
             //end game
 
             GameHandler.end_game = true;
-            Destroy(coll.gameObject);
+//            Destroy(coll.gameObject);
 
         }
 
