@@ -92,5 +92,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa387760ce1104eb4a2eab6924a36f5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seconds_alive: 1
-  movement: 20
+  seconds_alive: 0.5
+  movement: 1
