@@ -51,7 +51,7 @@ public class GameHandler : MonoBehaviour {
         end_game = true;
         enter_bus.allow_passengers = false;
 
-        print(score);
+        print(GameHandler.score);
 
         //show points
 

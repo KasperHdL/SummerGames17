@@ -36,8 +36,8 @@ public class CameraOcclusion : MonoBehaviour {
             b.y = 0;
             b = b.normalized;
 
-            Debug.DrawRay(buildings[i].transform.position, b, Color.red);
-            Debug.DrawRay(buildings[i].transform.position, delta, Color.green);
+           // Debug.DrawRay(buildings[i].transform.position, b, Color.red);
+           // Debug.DrawRay(buildings[i].transform.position, delta, Color.green);
 
             
             float d = Vector3.Dot(delta, b);
