@@ -59,6 +59,7 @@ MonoBehaviour:
   duration: 0.1
   max_excitement_per_tourist: -1
   excitement_per_second: -1
+  delay_between_icons: 0
   range_effect:
     serializedVersion: 2
     m_Curve:
@@ -93,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1094641bd142343598448cc1e016cedc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  end_scale: 50
+  end_scale: 20
   duration: 1
 --- !u!135 &135796350405972474
 SphereCollider:

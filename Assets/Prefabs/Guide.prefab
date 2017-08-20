@@ -257,6 +257,7 @@ MonoBehaviour:
   duration: 1
   max_excitement_per_tourist: 0
   excitement_per_second: 0
+  delay_between_icons: 0
   range_effect:
     serializedVersion: 2
     m_Curve:
@@ -311,12 +312,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   move_force: 200000
   actions:
-  - key: 323
+  - key: 122
     effect: {fileID: 114113235249242540}
     icon: {fileID: 2100000, guid: 1035ece684f344d0288801c2c02a4591, type: 2}
     end: 0
     next: 0
-  - key: 324
+  - key: 120
     effect: {fileID: 114798159549264952}
     icon: {fileID: 2100000, guid: 33b2933c9bb0e4010abd5fabb5a94591, type: 2}
     end: 0
@@ -342,6 +343,7 @@ MonoBehaviour:
   duration: 1
   max_excitement_per_tourist: 0
   excitement_per_second: 0
+  delay_between_icons: 0
   range_effect:
     serializedVersion: 2
     m_Curve:
@@ -382,6 +384,7 @@ MonoBehaviour:
   duration: 1
   max_excitement_per_tourist: 0
   excitement_per_second: 0
+  delay_between_icons: 0
   range_effect:
     serializedVersion: 2
     m_Curve:

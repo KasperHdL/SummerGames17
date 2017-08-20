@@ -27,8 +27,14 @@ public class GameHandler : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if(!game_started){
-            if(Input.GetKeyDown(KeyCode.Space)){
-                StartGame();
+            
+            if(Input.GetKeyDown(KeyCode.X) || 
+                Input.GetKeyDown(KeyCode.Z) ||
+                Input.GetKeyDown(KeyCode.UpArrow) ||
+                Input.GetKeyDown(KeyCode.DownArrow) ||
+                Input.GetKeyDown(KeyCode.LeftArrow) ||
+                Input.GetKeyDown(KeyCode.RightArrow)){
+                    StartGame();
             }
         }else if(!end_game){
             current_time = Time.time - start_time;
